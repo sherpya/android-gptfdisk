@@ -30,7 +30,7 @@
 
 using namespace std;
 
-#ifdef __FreeBSD__
+#if defined(__FreeBSD__) || defined(__ANDROID__)
 #define log2(x) (log(x) / M_LN2)
 #endif // __FreeBSD__
 

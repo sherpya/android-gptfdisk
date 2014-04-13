@@ -35,6 +35,10 @@
 
 #include "diskio.h"
 
+#ifndef BLKPBSZGET
+#define BLKPBSZGET _IO(0x12,123)
+#endif
+
 using namespace std;
 
 // Returns the official "real" name for a shortened version of same.
